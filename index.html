@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Погода</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="page-title">Погода</h1>
+    <button id="add-widget-btn" class="add-widget-btn" type="button">+ Добавить виджет</button>
+  </header>
+
+  <main id="widgets-container" class="widgets-container"></main>
+
+  <template id="widget-template">
+    <section class="widget">
+      <div class="widget__form">
+        <label class="field">
+          <span class="field__label">Широта</span>
+          <input class="field__input" type="text" inputmode="decimal" data-role="latitude" placeholder="-90 … 90">
+        </label>
+        <label class="field">
+          <span class="field__label">Долгота</span>
+          <input class="field__input" type="text" inputmode="decimal" data-role="longitude" placeholder="-180 … 180">
+        </label>
+        <button class="widget__submit" type="button" data-role="submit">Показать погоду</button>
+        <p class="widget__error" data-role="error" hidden></p>
+      </div>
+      <div class="widget__result" data-role="result" hidden>
+        <div class="result__icon" data-role="icon"></div>
+        <div class="result__temperature" data-role="temperature"></div>
+        <div class="result__description" data-role="description"></div>
+        <ul class="result__details" data-role="details"></ul>
+        <iframe class="result__map" data-role="map" title="Карта" loading="lazy"></iframe>
+      </div>
+    </section>
+  </template>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
