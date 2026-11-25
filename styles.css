@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: #f5f5f7;
+  background: #FFFFFF;
   color: var(--text);
   min-height: 100vh;
 }
@@ -51,10 +51,10 @@ body {
 
 .widget {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 2px solid #000000;
+  border-radius: 0;
   padding: 40px;
-  width: 697px;
+  width: 617px;
   max-width: 100%;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .result__icon { font-size: 96px; line-height: 1; }
-.result__temperature { font-size: 64px; font-weight: 600; }
+.result__temperature { font-size: 40px; font-weight: 400; }
 .result__description { font-size: var(--size-large); }
 
 .result__details {
