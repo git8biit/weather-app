@@ -51,11 +51,10 @@ body {
 
 .widget {
   background: #fff;
-  border: none;
-  border-radius: 16px;
-  box-shadow: none;
-  padding: 48px;
-  width: 697px;
+  border: 2px solid #000000;
+  border-radius: 0;
+  padding: 40px;
+  width: 617px;
   max-width: 100%;
 }
 
